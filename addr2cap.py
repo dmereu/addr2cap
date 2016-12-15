@@ -13,7 +13,7 @@ language = "it"
 logfile = "log.csv"
 csv_value_separator = ";"
 requests_delay = 0
-infile = "cap_spedizione_20161214_3.csv"
+infile = "input.csv"
 search_string = "SEARCH_STRING"
 take_a_breath_count = 30  # Avoid flood blocks posting tranches of n rows
 take_a_breath_pause = 10  # Pause between tranches
@@ -27,6 +27,7 @@ take_a_breath_pause = 10  # Pause between tranches
 #     cmd_params[0] = infile
 #     cmd_params[1] = search_string
 #
+
 cmd_params_count = len(sys.argv)
 
 try: logging.basicConfig(filename=logfile,
